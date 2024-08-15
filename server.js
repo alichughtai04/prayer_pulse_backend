@@ -5,6 +5,7 @@ const userRoutes = require('./routes/register');
 const chatRoutes = require('./routes/chatRoutes');
 const prayerRoutes = require('./routes/prayerRoutes');
 const loginRoutes = require('./routes/loginRoutes')
+const emailRoutes = require('./routes/emailRoutes')
 const  connectDB  = require('./config/db');
 
 const app = express();
@@ -20,6 +21,7 @@ app.use('/api/', userRoutes);
 app.use('/api/', chatRoutes)
 app.use('/api', prayerRoutes)
 app.use('/api/', loginRoutes )
+app.use('/api/', emailRoutes)
 
 
 
